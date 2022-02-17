@@ -1,0 +1,612 @@
+/* Custom Help Scout StyleSheet - by Devan Sabaratnam (founder of HR Partner - www.hrpartner.io) */
+/*Modified by Ahmed Abdul Khader from Joinqoala.com to fit their own styleguide also fixing some bugs in the mobile version*/
+/* Color pallette chosen from https://coolors.co/54494b-7e8287-9da39a-b98389-db2955 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,400i,500,700');
+@import url(//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium);
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+/*Using google fonts is more rcommended */
+
+/*setting the background of entire body */
+body {
+	background: #fbfbfc;
+    /* width: 100%; */
+}
+/* Home Page Title */
+
+/* making the no of rows and columns as per figma design*/
+/*this became useless since helpscout has in build settings to display categories instead of popular articles, still there nonetheless*/
+.threeCol {
+    display:flex;
+    flex-direction: column;
+}
+
+.threeCol .collection{
+    width: 100%;
+}
+
+.twoCol {
+    display:flex;
+    flex-direction: column;
+}
+.twoCol .collection{
+    width: 100%;
+}
+
+/* .row-fluid {
+    width: 100%;
+} */
+/*positioning the search bar towards th bottom of Qoala Hero image*/
+#searchBar {
+    position: relative;
+    top: 80%;
+    /* opacity: 0.9; */
+}
+
+
+
+#docsSearch h1 {
+    display: none;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: .4em;
+	font-family: "Euclid Circular B Medium", sans-serif;
+	color: #0b0b0e1f;
+	padding: 10px;
+}
+.navbar .nav li {
+	display: inline-block;
+	float: none;
+	font-family: "Euclid Circular B Medium", sans-serif;
+	font-size: 13px;
+	/* color: #34afcc; */
+	letter-spacing: .1em;
+}
+.navbar .nav li a, .navbar .icon-private-w {
+	font-size: 16px;
+    font-weight: 600;
+	color: #34afcc;
+
+}
+
+.navbar .nav .active a {
+	color: #34afcc;
+	font-size: 16px;
+	font-weight: 600;	
+}
+
+/* Header Size */
+
+a.brand > img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	height: 60px;
+	margin-left: -15px;
+	width: auto;
+}
+
+.navbar .navbar-inner {
+	/* background: #ffffff; */
+	height: 60px;
+}
+.navbar .navbar-inner .container-fluid {
+	padding: 0;
+	height: 60px;
+}
+.navbar .brand {
+	float: left;
+	display: block;
+	padding: 0px;
+	margin-left: -15px;
+	font-size: 20px;
+	font-weight: 200;
+	color: #777;
+	text-shadow: 0 1px 0 #fff;
+}
+/* Home Page Search Bar Background */
+
+#docsSearch {
+    height: 400px;
+    background: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61897cbed05e124218c91e65_social_graph.jpg) no-repeat fixed ;
+	background-size: cover;
+	border-top: 1px solid #dadada;
+	margin-bottom: 3em;
+}
+/* Search Input Box */
+
+input.search-query {
+	padding-right: 14px;
+	padding-right: 4px \9;
+	padding-left: 14px;
+	padding-left: 4px \9;
+	margin-bottom: 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+    opacity: 0.85; ;
+}
+/* Home Page Category Title*/
+
+.category-list h3 {
+	color: #0c0b0c;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.3em;
+	font-family: "Manrope", sans-serif;
+}
+
+/* Category Styles */
+
+.category-list .category p {
+	color: #7e8287;
+	font-family: "Manrope", sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	letter-spacing: 0.25px;
+}
+.category-list .category {
+	background-color: #fff;
+	background-position: top 20px center !important;
+	background-repeat: no-repeat !important;
+	background-size: 100px auto !important;
+	box-shadow: 0 7px 4px -5px rgba(0, 0, 0, 0.05);
+	box-sizing: border-box;
+	min-height: 183px;
+	padding: 120px 20px 15px;
+	position: relative;
+	width: 31.5%;
+	transition: all 0.2s;
+}
+.category-list .category:hover {
+	text-decoration: none;
+	background: #f7f7f9;
+}
+
+
+
+.collection-category h2 {
+    font-weight: 500;
+    margin: 0 0 20px;
+    text-align: center;
+    padding-left: 0%;
+    font-family: "Euclid Circular B Medium", sans-serif;
+    /* text-transform: uppercase; */
+    color: #7e8287;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.collection-category h2 a {
+    color: #34afcc;
+}
+
+.collection-category .category-list {
+    margin: 0 0 4em;
+    text-align: center;
+}
+
+
+
+/* Home Page Link Style */
+
+#serp-dd .result a, #serp-dd .result>li.active, #full-Article strong a, .collection a, .contentWrapper a, .most-pop-articles .popArticles a, .most-pop-articles .popArticles a span, .category-list .category .article-count, .category-list .category .article-count, .contentWrapper a {
+	font-weight: 500;
+	letter-spacing: .25px;
+	color: #34afcc;
+	margin-top: 15px;
+	/* text-transform: capitalize; */
+	text-decoration: none;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 500;
+}
+#serp-dd .result a:hover, #serp-dd .result>li.active, #full-Article strong a, .collection a, .contentWrapper a, .most-pop-articles .popArticles a, .most-pop-articles .popArticles a:hover span, .category-list .category .article-count, .category-list .category:hover .article-count, .contentWrapper a {
+	font-weight: 500;
+	letter-spacing: .25px;
+	color: #34afcc;
+	margin-top: 15px;
+	/* text-transform: capitalize; */
+	/* text-decoration: underline; */
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 500;
+}
+/* Home Page Search Button */
+
+#searchBar button {
+	color: #fff;
+	text-shadow: 0 0px 0px rgba(255,255,255,.0);
+	background: #fb8500;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #b98389;
+	font-size: 18px;
+	padding: 0 1.5em;
+	height: 50px;
+	position: absolute;
+}
+#searchBar button:hover {
+	background: #f36e21;
+	text-shadow: 0 0px 0px rgba(255,255,255,.0);
+	border: 1px solid #2ad7d7;
+}
+input, button, select, textarea {
+	font-family: "Manrope",
+	sans-serif,
+	"Helvetica Neue",
+	Helvetica,
+	Arial,
+	sans-serif;
+}
+
+
+/* Category Images */
+
+/*
+  Here is where you determine the images to be used just above each section of your Help Scout main page.
+  You have to create one #category-xxx CSS selector for each separate category in your Help Scout collection.
+  To get your category xxx number, simply visit the relevant category in your Help Scout docs and
+  check the URL bar for the 3 digit category number.
+
+  Then you have to specify an image located on a shared server somewhere on the internet that can
+  serve up the images so Help Scout can display them.
+*/
+
+
+/* Getting Started (use your actual category names here in the comment to make it easier) */
+#category-4 {
+	background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff189370e313cb63627a_FAQ%20clock.png);
+}
+
+/* Setup Users */
+#category-9 {
+  background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff19884c505d624aa5ff_FAQ%20laptop.png);
+}
+
+/* Uploading Files */
+#category-12 {
+  background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff187ef87841ff23b927_FAQ%20qoins.png);
+}
+
+/* Uploading Files */
+#category-10 {
+	background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff1715bc1573b8c83562_FAQ%20account.png);
+  }
+
+/* Uploading Files */
+#category-11 {
+	background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff17cda4d325dbae5bf5_FAQ%20bag.png);
+  }
+
+/* Uploading Files */
+#category-49 {
+	background-image: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61c1ff183de869f8284560b6_FAQ%20alert.png);
+  }
+
+/* etc... keep going and add one CSS ID selector for each category. images used here were uploaded into webflow in the same order*/
+
+
+
+/* Side Bar Styles */
+
+#sidebar .nav-list a {
+	display: inline-block;
+	color: #34afcc;
+	font-size: 14px;
+	padding: 6px 15px 6px 0;
+	line-height: 20px;
+	margin-left: 0;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 300;
+}
+#sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus {
+	font-weight: 500;
+	color: #06b9dd;
+	background: 0 0;
+	text-shadow: none;
+	text-decoration: underline;
+}
+#sidebar h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #7e8287;
+    font-weight: 400;
+	margin-bottom: 4px;
+	font-family: "Manrope",
+	sans-serif;
+	letter-spacing: 2px;
+}
+/* Article Styles */
+/*to make the a4 sheet like icon dissapear*/
+.icon-article-doc {
+	display:none;
+}
+
+
+
+
+#main-content {
+    background: none;
+    float: right;
+    margin-bottom: 2em;
+    padding: 32px 0 0 28px;
+}
+
+#fullArticle img {
+    display: block;
+    margin: 1em 0 2em;
+    padding: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#fullArticle .title, .contentWrapper h1 {
+	margin: 0 30px .5em 0;
+	font-family: "Euclid Circular B Medium",
+	sans-serif;
+	color: #242526;
+	font-weight: 700;
+}
+#fullArticle .printArticle {
+	position: absolute;
+	right: 46px;
+	top: 40px;
+}
+#fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
+	color: #7e8287;
+	font-family: "Manrope",
+	sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: .01em;
+}
+#categoryHead .sort select {
+	width: 150px;
+	height: 24px;
+	margin: 0;
+	line-height: 24px;
+	font-size: 13px;
+	color: #7e8287;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 300;
+}
+/* Style this one if you want bolded article text to have a different color */
+
+#fullArticle strong {
+	color: #7e8287;
+}
+#fullArticle h2 {
+	font-size: 24px;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 400;
+	color: #db2955;
+}
+#fullArticle h3 {
+	font-size: 20px;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 700;
+	color: #db2955;
+}
+#fullArticle h4 {
+	font-size: 16px;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 300;
+	color: #3a3a3b;
+    font-style: italic;
+}
+.contentWrapper p {
+	margin-top: -4px;
+	word-wrap: break-word;
+	font-family: "Manrope",
+	sans-serif;
+	color: #171718;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: .01em;
+}
+
+/* Article Footers */
+
+.articleFoot p, .articleFoot time {
+	color: #7e8287;
+	display: inline-block;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* Page Footers */
+
+footer p a {
+	color: #7e8287;
+	font-family: "Manrope",
+	sans-serif;
+	font-weight: 300;
+}
+
+
+/* Contact Modal */
+
+#contactModal h2, .abuse h2 {
+	background: #fff;
+	margin: 0;
+	padding: 11px 0 10px 18px;
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-family: "Manrope",
+	sans-serif;
+	color: #58A4B0;
+	font-weight: 300;
+}
+#contactModal .control-label {
+	width: 110px;
+	font-family: "Manrope",
+	sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #7e8287;
+}
+
+.btn {
+	color: #fff;
+	text-shadow: 0 0px 0px rgba(255,255,255,.0);
+	background: #03d3d5;
+	border-radius: 5px;
+	border: 1px solid #b98389;
+	font-size: 14px;
+	padding: .5em;
+	/* height: 50px; */
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+    color: #fff;
+	text-shadow: 0 0px 0px rgba(255,255,255,.0);
+	background: #8fa7c2;
+  border: 1px solid #9da39a;
+}
+
+#search-query .btn:hover {
+	color: #fff;
+	text-shadow: 0 0px 0px rgba(255,255,255,.0);
+	background: #8fa7c2;
+	border-radius: 5px;
+	border: 1px solid #9da39a;
+	font-size: 18px;
+	padding: 0 1.5em;
+	height: 50px;
+}
+
+.category-list {
+    text-align: center;
+}
+
+/* Fix for making homepage category gallery go smoothly from 3 to 2 to 1 column */
+
+@media screen and (max-width: 1105px) {
+	section.category-list .category {
+		width: 48.2%;
+	}
+}
+@media screen and (max-width: 760px) {
+	section.category-list .category {
+		box-sizing: border-box;
+		margin: 0 0 20px;
+		padding: 120px 20px 15px;
+		width: 100%;
+	}
+}
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+	#main-content {
+		float: left;
+	}
+	.navbar .btn-navbar {
+		margin-top: 16px;
+		right: -10px;
+	}
+	.related {
+		padding: 30px 25px 25px;
+	}
+	.related ul {
+		margin-left: 0;
+	}
+	.related h3 {
+		padding-left: 0;
+	}
+	.related ul>li a {
+		margin-left: 0;
+	}
+}
+@media (max-width: 480px) {
+
+/*Chnages in style applicable only to the mobile version*/
+	#main-content {
+		position: relative;
+		z-index: 3;
+		float: left;
+		/*z-index is set as 3(lesser than the navbar when collapsed which has z-index 10) since the sidebar section by default covers this section where the article titles are in the page*/
+		/* background: none;
+		float: right;
+		margin-bottom: 2em;
+		padding: 32px 0 0 28px; */
+	}
+/*navbar when collapsed,including making it clickable*/
+	.nav-collapse.collapse {
+		position: relative;
+		z-index: 10;
+		background-color: rgba(255, 255, 255, 0.95);
+		border: 1px solid rgba(68, 67, 67, 0.1);
+		width: 100%;
+	}
+/*the qoala logo*/
+	.navbar .brand {
+		margin-left: -1px;
+	}
+	
+/*the area where the qoala hero image is also where the search bar is a child of*/
+	#docsSearch {
+		background: url(https://uploads-ssl.webflow.com/618267f92e67f583eab0db64/61a753a8970cafc31d45b54a_CITY_QOALA_MASTER.00120.png) no-repeat  ;
+		background-size: contain;
+	}
+
+
+	#searchBar button {
+		color: transparent;
+		text-shadow: 0;
+		background: transparent;
+		border-radius: 0 5px 5px 0;
+		border: 0;
+		font-size: 18px;
+		padding: 0 1.5em;
+		height: 50px;
+		position: absolute;
+	}
+	#searchBar button .icon-search {
+		display: block;
+		text-shadow: none;
+		margin-top: 15px;
+	}
+	#searchBar button:hover .icon-search:hover {
+		display: block;
+		text-shadow: none;
+		margin-top: 15px;
+		background-color: transparent;
+	}
+}
+@media (max-width: 480px) {
+	#fullArticle .title, .contentWrapper h1 {
+		font-size: 24px;
+	}
+	#fullArticle h2 {
+		font-size: 20px;
+	}
+}
+
+
+/* Collection Titles  */
+.collection-category h2 a {
+    color: #54494b;
+}
+
+.collection-category h2 {
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding-left: .65%;
+    font-family: "Manrope",
+    sans-serif;
+    text-align: center;
+}
